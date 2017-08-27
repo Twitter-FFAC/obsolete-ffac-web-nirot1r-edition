@@ -13,7 +13,7 @@
                 現在リストアップされているアカウントを一斉ブロックします。
             </p>
             <div>
-                <a href="twitter-login.php" class="btn btn-primary">Twitterログイン</a>
+                <a href="twitter-login.php" class="btn btn-primary"><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;Twitterログイン</a>
             </div>
 
             <h3 class="page-header">リストアップされているアカウント</h3>
