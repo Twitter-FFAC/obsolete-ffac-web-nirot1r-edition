@@ -31,6 +31,9 @@
             .shadow {
                 box-shadow: 0px 1px 3px #aaa;
             }
+            .data {
+                margin: 20px;
+            }
         </style>
     </head>
     <body>
@@ -58,10 +61,12 @@
         $screenname = $account["screen_name"];
         $createdate = $account["created_at"];
 ?>
-                    <div class="col-md-6 shadow profile">
-                        <div class="title"><a href="https://twitter.com/<?= $screenname ?>" target="_blank"><?= $name ?>(@<?= $screenname ?>)</a></div>
-                        <div class="content">
-                            <div>固有ID : <?= $id ?> / アカウント作成日時 : <?= $createdate ?></div>
+                    <div class="col-md-6 profile">
+                        <div class="shadow data">
+                            <div class="title"><a href="https://twitter.com/<?= $screenname ?>" target="_blank"><?= $name ?>(@<?= $screenname ?>)</a></div>
+                            <div class="content">
+                                <div>固有ID : <?= $id ?> / アカウント作成日時 : <?= $createdate ?></div>
+                            </div>
                         </div>
                     </div>
 
