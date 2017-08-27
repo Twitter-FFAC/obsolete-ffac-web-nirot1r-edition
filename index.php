@@ -13,7 +13,11 @@
                 現在リストアップされているアカウントを一斉ブロックします。
             </p>
             <div>
+<<<<<<< .merge_file_Kg7tNn
                 <a href="twitter-login.php" class="btn btn-primary"><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;Twitterログイン</a>
+=======
+                <a href="twitter-login.php" class="btn btn-primary"><i class="fa fa-twitter" aria-hidden="true"></i> Twitterログイン</a>
+>>>>>>> .merge_file_33ZO3i
             </div>
 
             <h3 class="page-header">リストアップされているアカウント</h3>
