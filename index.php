@@ -14,6 +14,7 @@
             body {
                 height: 100%;
                 text-shadow: 0px 0px 2px #aaa;
+                margin-bottom: 50px;
             }
             .profile {
                 text-align: left;
