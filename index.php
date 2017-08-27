@@ -17,18 +17,15 @@
             }
             .profile {
                 text-align: left;
-                padding: 10px;
+                padding: 7px;
                 margin-bottom: 20px;
             }
-                .profile .icon {
-                    font-size: 3em;
-                }
                 .profile .title {
-                    font-size: 2em;
+                    font-size: 1.5em;
                     font-weight: bold;
                 }
                 .profile .content {
-                    margin: 10px;
+                    margin: 5px;
                     font-size: 1em;
                 }
             .shadow {
