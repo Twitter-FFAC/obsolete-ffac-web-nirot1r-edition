@@ -59,7 +59,7 @@
         $createdate = $account["created_at"];
 ?>
                     <div class="col-sm-12 shadow profile">
-                        <div class="title"><a href="https://twitter.com/<?= $screenname ?>" class="btn btn-primary" target="_blank"><?= $name ?>(@<?= $screenname ?>)</a></div>
+                        <div class="title"><a href="https://twitter.com/<?= $screenname ?>" target="_blank"><?= $name ?>(@<?= $screenname ?>)</a></div>
                         <div class="content">
                             <div>固有ID : <?= $id ?> / アカウント作成日時 : <?= $createdate ?></div>
                         </div>
