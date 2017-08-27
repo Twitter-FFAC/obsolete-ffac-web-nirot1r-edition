@@ -58,6 +58,14 @@
                 詳細な情報は、硫酸鶏さんのFight for artistic creativityリポジトリをご覧ください。
             </p>
 
+            <h3 class="page-header">一斉ブロックシステム Alpha</h3>
+            <p>
+                現在リストアップされているアカウントを一斉ブロックします。
+            </p>
+            <div>
+                    <a href="#" class="btn btn-primary">Twitterログイン</a>
+            </div>
+
             <h3 class="page-header">リストアップされているアカウント</h3>
             <div class="row">
                 <div class="container">
