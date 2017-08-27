@@ -1,5 +1,4 @@
 <?php
-    session_start();
     require_once("twitter-config.php");
     require_once("twitteroauth/autoload.php");
 
