@@ -32,6 +32,7 @@
             .data {
                 margin: 5px;
                 padding: 5px;
+                height: 130px;
             }
         </style>
     </head>
