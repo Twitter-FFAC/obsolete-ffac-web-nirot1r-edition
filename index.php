@@ -2,50 +2,11 @@
 <html>
     <head>
         <link rel="stylesheet" href="/bootstrap.min.css" media="screen">
-        <!--<link rel="stylesheet" href="style.css" media="screen">-->
+        <link rel="stylesheet" href="/style.css" media="screen">
         <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>        
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Fight for artistic creativity</title>
-        <style>
-            /* Tag */
-            html {
-                height: 100%;
-            }
-            body {
-                height: 100%;
-                text-shadow: 0px 0px 2px #aaa;
-            }
-            /* Class */
-            .profile {
-                text-align: left;
-            }
-                .profile .title {
-                    font-size: 1.5em;
-                    font-weight: bold;
-                }
-                .profile .content {
-                    margin: 5px;
-                    font-size: 1em;
-                }
-            .footer {
-                text-align: center;
-                margin: 10px;
-                padding: 5px;
-            }
-            .shadow {
-                box-shadow: 0px 1px 3px #aaa;
-            }
-            .data {
-                margin: 5px;
-                padding: 5px;
-                height: 130px;
-            }
-            /* Bootstrap */
-            .container {
-                margin-bottom: 20px;
-            }
-        </style>
     </head>
     <body>
         <div class="container shadow">
