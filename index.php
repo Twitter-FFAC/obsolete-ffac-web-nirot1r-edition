@@ -28,7 +28,7 @@
                 }
             .footer {
                 text-align: center;
-                margin: 5px;
+                margin: 10px;
                 padding: 5px;
             }
             .shadow {
