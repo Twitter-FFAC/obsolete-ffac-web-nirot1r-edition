@@ -1,6 +1,7 @@
 <?php include "header.php"; ?>
         <div class="container shadow">
 
+            <h3 class="page-header">このWEBサイトについて</h3>
             <p>
                 <a href="https://github.com/acid-chicken">硫酸鶏さん</a>が先頭に立って進めている「Fight for artistic creativity」に感銘を受け、WEBサイトを小野咲みなみが開設したものです。<br>
                 "協力"する際の手助けとして、<a href="https://github.com/acid-chicken/fight-for-artistic-creativity/blob/master/lists/blacklist.json">攻撃に用いられるアカウントリスト</a>を用いて各アカウントのリストアップを行います。<br>
@@ -12,7 +13,7 @@
                 現在リストアップされているアカウントを一斉ブロックします。
             </p>
             <div>
-                    <a href="twitter-login.php" class="btn btn-primary">Twitterログイン</a>
+                <a href="twitter-login.php" class="btn btn-primary">Twitterログイン</a>
             </div>
 
             <h3 class="page-header">リストアップされているアカウント</h3>
