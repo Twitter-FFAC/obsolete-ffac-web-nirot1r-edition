@@ -1,4 +1,5 @@
 <?php
+    include "header.php";
     require_once("twitter-config.php");
     require_once("twitteroauth/autoload.php");
 
@@ -8,7 +9,6 @@
         die("Doesn't have access token.");
     }
     
-    include "header.php";
 ?>
 
         <div class="container shadow">
