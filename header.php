@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -11,6 +12,19 @@
     <body>
     
     <div class="container">
+<?php
+    if(isset($_SESSION["error"]) && $_SESSION["error"] != []) {
+?>
+        <div class="alert alert-dismissible alert-warning">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <h4><?= $_SESSION["error"]["title"] ?></h4>
+            <p><?= $_SESSION["error"]["detail"] ?></p>
+        </div>
+
+<?php
+        $_SESSION["error"] = [];
+    }
+?>
         <h1 class="page-header">Fight for artistic creativity</h1>
         <p class="lead">Twitterをディストピアにしないために、我々ができること。</p>
     </div>
