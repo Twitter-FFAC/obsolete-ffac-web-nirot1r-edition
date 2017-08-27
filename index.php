@@ -17,7 +17,6 @@
             }
             .profile {
                 text-align: left;
-                padding: 7px;
             }
                 .profile .title {
                     font-size: 1.5em;
