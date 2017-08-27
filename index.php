@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Fight for artistic creativity</title>
         <style>
+            /* Tag */
             html {
                 height: 100%;
             }
@@ -15,6 +16,7 @@
                 height: 100%;
                 text-shadow: 0px 0px 2px #aaa;
             }
+            /* Class */
             .profile {
                 text-align: left;
             }
@@ -39,6 +41,7 @@
                 padding: 5px;
                 height: 130px;
             }
+            /* Bootstrap */
             .container {
                 margin-bottom: 20px;
             }
