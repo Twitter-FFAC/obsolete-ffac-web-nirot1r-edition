@@ -32,7 +32,8 @@
                 box-shadow: 0px 1px 3px #aaa;
             }
             .data {
-                margin: 20px;
+                margin: 5px;
+                padding: 5px;
             }
         </style>
     </head>
