@@ -10,7 +10,7 @@
         <meta property="og:image" content="https://raw.githubusercontent.com/Twitter-FFAC/fight-for-artistic-creativity/master/assets/logo.png" />
         <meta property="og:title" content="Fight for artistic creativity" />
         <meta property="og:description" content="Twitterをディストピアにしないために、我々ができること。" />
-		<meta property="og:url" content="https://<?php echo $_SERVER['SERVER_NAME']?>/" />
+        <meta property="og:url" content="https://<?php echo $_SERVER['SERVER_NAME']?>/" />
         <meta property="og:site_name" content="Fight for artistic creativity" />
         <meta property="og:locale" content="ja_JP" />
         <meta name="twitter:card" content="summary" />
