@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="//cdn.g-second.net/css/style.php?file=g-second">
         <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <meta property="og:type" content="<?php if($_SERVER["REQUEST_URI"] == "/"){echo "website";}else{echo "article";}?>">
+        <meta property="og:type" content="<?php if($_SERVER["REQUEST_URI"] === "/"){echo "website";}else{echo "article";}?>">
         <meta property="og:image" content="https://raw.githubusercontent.com/Twitter-FFAC/fight-for-artistic-creativity/master/assets/logo.png" />
         <meta property="og:title" content="Fight for artistic creativity" />
         <meta property="og:description" content="Twitterをディストピアにしないために、我々ができること。" />
@@ -38,7 +38,7 @@
         
         <div class="container">
 <?php
-    if(isset($_SESSION["error"]) && $_SESSION["error"] != []) {
+    if(isset($_SESSION["error"]) && $_SESSION["error"] !== []) {
 ?>
             <div class="alert alert-dismissible alert-warning">
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
