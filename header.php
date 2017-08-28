@@ -16,6 +16,13 @@
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@mnmonzk" />
         <title>Fight for artistic creativity</title>
+        <style>   
+            .data {
+                margin: 5px;
+                padding: 5px;
+                height: 150px;
+            }
+        </style>
     </head>
     <body>
     
