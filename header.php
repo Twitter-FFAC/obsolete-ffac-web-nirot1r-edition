@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta property="og:type" content="<?php if($_SERVER["REQUEST_URI"] == "/"){echo "website";}else{echo "article";}?>">
-        <meta property="og:image" content="https://raw.githubusercontent.com/acid-chicken/fight-for-artistic-creativity/master/assets/logo.png" />
+        <meta property="og:image" content="https://raw.githubusercontent.com/Twitter-FFAC/fight-for-artistic-creativity/master/assets/logo.png" />
         <meta property="og:title" content="Fight for artistic creativity" />
         <meta property="og:description" content="Twitterをディストピアにしないために、我々ができること。" />
         <meta property="og:url" content="https://ffac.mnmonzk.f5.si/" />
