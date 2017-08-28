@@ -25,24 +25,34 @@
         </style>
     </head>
     <body>
-    
-    <div class="container">
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-105407862-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        
+        <div class="container">
 <?php
     if(isset($_SESSION["error"]) && $_SESSION["error"] != []) {
 ?>
-        <div class="alert alert-dismissible alert-warning">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <h4><?= $_SESSION["error"]["title"] ?></h4>
-            <p><?= $_SESSION["error"]["detail"] ?></p>
-        </div>
+            <div class="alert alert-dismissible alert-warning">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <h4><?= $_SESSION["error"]["title"] ?></h4>
+                <p><?= $_SESSION["error"]["detail"] ?></p>
+            </div>
 
 <?php
         $_SESSION["error"] = [];
     }
 ?>
-        <h1 class="page-header">Fight for artistic creativity</h1>
-        <p class="lead">Twitterをディストピアにしないために、我々ができること。</p>
-        <div class="text-right">
-            プロジェクトを共有 : <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            <h1 class="page-header">Fight for artistic creativity</h1>
+            <p class="lead">Twitterをディストピアにしないために、我々ができること。</p>
+            <div class="text-right">
+                プロジェクトを共有 : <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </div>
         </div>
-    </div>
