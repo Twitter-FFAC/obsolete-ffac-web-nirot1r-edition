@@ -7,6 +7,15 @@
         <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>        
         <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta property="og:type" content="<?php if($_SERVER["REQUEST_URI"] == "/"){echo "website";}else{echo "article";}?>">
+        <meta property="og:image" content="https://raw.githubusercontent.com/acid-chicken/fight-for-artistic-creativity/master/assets/logo.png" />
+        <meta property="og:title" content="Fight for artistic creativity" />
+        <meta property="og:description" content="Twitterをディストピアにしないために、我々ができること。" />
+        <meta property="og:url" content="https://ffac.mnmonzk.f5.si/" />
+        <meta property="og:site_name" content="Fight for artistic creativity" />
+        <meta property="og:locale" content="ja_JP" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@mnmonzk" />
         <title>Fight for artistic creativity</title>
     </head>
     <body>
