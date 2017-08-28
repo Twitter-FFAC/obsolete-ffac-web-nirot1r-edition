@@ -32,16 +32,20 @@
 
         if($account["email"] != "") {
             $label = "danger";
-            $address = $account["email"];
+            $address = explode("@", $account["email"]);
+            $user = $address[0];
+            $domain = "@".$address[1];
+            $user =preg_replace("/[A-z]/", "*", $user, strlen($user) /2);
         } else {
             $label = "default";
-            $address = "未検証";
+            $user = "";
+            $domain = "未検証";
         }
 ?>
                     <div class="col-md-6 profile">
                         <div class="shadow data">
                             <div class="content">
-                                <span class="label label-<?= $label ?>"><?= $address ?></span>
+                                <span class="label label-<?= $label ?>"><?= $user ?><?= $domain ?></span>
                             </div>
                             <div class="title"><a href="https://twitter.com/<?= $screenname ?>" target="_blank"><?= $name ?>(@<?= $screenname ?>)</a></div>
                             <div class="content">
