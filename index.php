@@ -42,8 +42,8 @@
             $domain = "未検証";
         }
 ?>
-                    <div class="col-md-6 profile">
-                        <div class="box-shadow data">
+                    <div class="col-md-6">
+                        <div class="box-shadow profile">
                             <div class="content">
                                 <span class="label label-<?= $label ?>"><?= $user ?><?= $domain ?></span>
                             </div>
