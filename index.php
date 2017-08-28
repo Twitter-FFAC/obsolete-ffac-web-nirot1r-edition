@@ -12,7 +12,9 @@
             <p>
                 現在リストアップされているアカウントを一斉ブロックします。<br />
                 ツイートを送信などの権限を要求しておりますが、ブロック以外で認証情報を利用することは<b>一切ありません</b>のでご安心ください。<br />
-                気になるようであれば、<a href="https://github.com/Twitter-FFAC/ffac-web/blob/master/twitter-blocking.php">こちらのソースコード</a>をご覧ください。
+                気になるようであれば、<a href="https://github.com/Twitter-FFAC/ffac-web/blob/master/twitter-blocking.php">こちらのソースコード</a>をご覧ください。<br />
+                <br />
+                それでも不安が残るようでしたら、下の「リストアップされているアカウント」から作業をお願いします。
             </p>
             <div>
                 <a href="twitter-login.php" class="btn btn-primary"><i class="fa fa-twitter" aria-hidden="true"></i> Twitterログイン</a>
