@@ -20,7 +20,7 @@
             </p>
             <ol>
 <?php
-    $accountjson = file_get_contents("https://raw.githubusercontent.com/acid-chicken/fight-for-artistic-creativity/master/lists/blacklist.json");
+    $accountjson = file_get_contents("https://raw.githubusercontent.com/Twitter-FFAC/fight-for-artistic-creativity/master/lists/blacklist.json");
     $accountdata = json_decode($accountjson, true);
     $_SESSION["twitter"]["block"] = $accountdata;
     
