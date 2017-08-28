@@ -1,5 +1,5 @@
 <?php include "header.php"; ?>
-        <div class="container shadow">
+        <div class="container box-shadow">
 
             <h3 class="page-header">このWEBサイトについて</h3>
             <p>
@@ -43,7 +43,7 @@
         }
 ?>
                     <div class="col-md-6 profile">
-                        <div class="shadow data">
+                        <div class="box-shadow data">
                             <div class="content">
                                 <span class="label label-<?= $label ?>"><?= $user ?><?= $domain ?></span>
                             </div>
@@ -65,7 +65,7 @@
 
             </div>
 
-            <div class="footer shadow">
+            <div class="footer box-shadow">
                 Project with <span class="text-danger"><i class="fa fa-heart" aria-hidden="true"></i></span>&nbsp;<a href="https://github.com/acid-chicken/fight-for-artistic-creativity"><i class="fa fa-github" aria-hidden="true"></i>&nbsp;Fight for artistic creativity by acid-chicken</a><br>
                 このWEBサイトは、GitHubにてバージョン管理しています。リポジトリは<a href="https://github.com/mnmonzk/ffac-web">こちら</a>です。
             </div>
