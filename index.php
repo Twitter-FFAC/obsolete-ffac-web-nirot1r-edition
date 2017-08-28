@@ -43,7 +43,7 @@
         }
 ?>
                     <div class="col-md-6">
-                        <div class="box-shadow profile">
+                        <div class="box-shadow data profile">
                             <div class="content">
                                 <span class="label label-<?= $label ?>"><?= $user ?><?= $domain ?></span>
                             </div>
