@@ -49,7 +49,10 @@
                             </div>
                             <div class="title"><a href="https://twitter.com/<?= $screenname ?>" target="_blank"><?= $name ?></a></div>
                             <div class="content">
-                                <div>スクリーンネーム : <?= $screenname ?> / 固有ID : <?= $id ?> / アカウント作成日時 : <?= $createdate ?></div>
+                                <div>
+                                    スクリーンネーム : <code><?= $screenname ?></code><br>
+                                    固有ID : <?= $id ?> / アカウント作成日時 : <?= $createdate ?>
+                                </div>
                             </div>
                         </div>
                     </div>
