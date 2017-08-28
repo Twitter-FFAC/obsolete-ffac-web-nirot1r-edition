@@ -1,6 +1,8 @@
 # ffac-web
 硫酸鶏氏が立ち上げた[Fight for artistic creativity](https://github.com/acid-chicken/fight-for-artistic-creativity)に感銘を受け、小野咲みなみがこのWEBサイトの開設を行いました。
 
+WEBサイトは[こちら](https://ffac.mnmonzk.f5.si)です
+
 ## Fight for artistic creativity(ffac)とは
 > Twitterをディストピアにしないために、我々ができること。
 
