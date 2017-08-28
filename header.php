@@ -2,9 +2,9 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <link rel="stylesheet" href="//cdn.g-second.net/css/bootstrap.min.css" media="screen">
-        <link rel="stylesheet" href="//cdn.g-second.net/css/g-second.css?version=2">
-        <link rel="stylesheet" href="//cdn.g-second.net/css/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="//cdn.g-second.net/css/style.php?file=bootstrap.min" media="screen">
+        <link rel="stylesheet" href="//cdn.g-second.net/css/style.php?file=g-second">
+        <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta property="og:type" content="<?php if($_SERVER["REQUEST_URI"] == "/"){echo "website";}else{echo "article";}?>">
         <meta property="og:image" content="https://raw.githubusercontent.com/acid-chicken/fight-for-artistic-creativity/master/assets/logo.png" />
