@@ -29,9 +29,20 @@
         $name = $account["name"];
         $screenname = $account["screen_name"];
         $createdate = $account["created_at"];
+
+        if($account["email"] != "") {
+            $label = "danger";
+            $address = $account["email"];
+        } else {
+            $label = "default";
+            $address = "未検証";
+        }
 ?>
                     <div class="col-md-6 profile">
                         <div class="shadow data">
+                            <div class="content">
+                                <span class="label label-<?= $label ?>"><?= $address ?></span>
+                            </div>
                             <div class="title"><a href="https://twitter.com/<?= $screenname ?>" target="_blank"><?= $name ?>(@<?= $screenname ?>)</a></div>
                             <div class="content">
                                 <div>固有ID : <?= $id ?> / アカウント作成日時 : <?= $createdate ?></div>
