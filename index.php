@@ -34,7 +34,7 @@
         $screenname = $account["screen_name"];
         $createdate = $account["created_at"];
 
-        if($account["email"] !== "") {
+        if(isset($account["email"])) {
             $label = "danger";
             $address = explode("@", $account["email"]);
             $user = $address[0];
