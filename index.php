@@ -34,7 +34,7 @@
         $screenname = $account["screen_name"];
         $createdate = $account["created_at"];
 
-        if($account["email"] != "") {
+        if($account["email"] !== "") {
             $label = "danger";
             $address = explode("@", $account["email"]);
             $user = $address[0];
@@ -70,8 +70,8 @@
             </div>
 
             <div class="footer box-shadow">
-                Project with <span class="text-danger"><i class="fa fa-heart" aria-hidden="true"></i></span>&nbsp;<a href="https://github.com/acid-chicken/fight-for-artistic-creativity"><i class="fa fa-github" aria-hidden="true"></i>&nbsp;Fight for artistic creativity by acid-chicken</a><br>
-                このWEBサイトは、GitHubにてバージョン管理しています。リポジトリは<a href="https://github.com/mnmonzk/ffac-web">こちら</a>です。<br />
+                Project with <span class="text-danger"><i class="fa fa-heart" aria-hidden="true"></i></span>&nbsp;<a href="https://github.com/Twitter-FFAC/fight-for-artistic-creativity"><i class="fa fa-github" aria-hidden="true"></i>&nbsp;Fight for artistic creativity by acid-chicken</a><br>
+                このWEBサイトは、GitHubにてバージョン管理しています。リポジトリは<a href="https://github.com/Twitter-FFAC/ffac-web">こちら</a>です。<br />
                 このWEBサイトについてのご質問は、<a href="https://twitter.com/mnmonzk">小野咲みなみ</a>か<a href="https://twitter.com/acid_chicken">硫酸鶏</a>までお申し付けください。
             </div>
             
