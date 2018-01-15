@@ -1,0 +1,73 @@
+/*
+    Fight for artistic creativity WEB Spam Block System
+        Author : nirot1r(Tomotada Saigusa)
+        Support : Twitter-FFAC Team
+*/
+    /* Tag Fixes */
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0; padding: 0;
+            width: 100%; height: 100%;
+            background-color: #333;
+        }
+    /* Classes */
+        .header {
+            padding: 10px;
+            text-align: center;
+            background-color: #222;
+                color: #fff;
+        }
+            .header-title {
+                font-size: 1.5em;
+            }
+            .header-subtitle {
+                
+            }
+        .container {
+            padding: 20px 100px;
+            width: 100%; height: 100%;
+            text-align: center;
+        }
+        .column {
+            display: inline-block;
+            vertical-align: middle;
+            width: 49%;
+        }
+        .card {
+            margin: 5px; padding: 10px;
+            border: 1px #fff solid;
+            background-color: #444;
+                color: #fff;
+        }
+            .card-icon {
+                font-size: 4em;
+                text-align: center;
+            }
+            .card-header {
+                font-size: 2em;
+                    font-weight: bold;
+                text-align: center;
+            }
+            .card-content {
+                text-align: center;
+            }
+    /* Component */
+        .btn {
+            display: inline-block;
+            background-color: #333;
+                color: #fff;
+                text-decoration: none;
+            border: 1px #fff solid;
+            margin: 0.5em; padding: 0.25em 1em;
+            transition: all 300ms 0s ease;
+        }
+            .btn:hover {
+                background-color: #fff;
+                    color: #333;
+            }
+            .btn:active {
+                background-color: #aaa;
+                    color: #fff;
+            }
