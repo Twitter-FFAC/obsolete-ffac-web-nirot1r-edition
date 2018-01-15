@@ -1,21 +1,8 @@
-<!DOCTYPE html>
-<html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>ffac-web</title>
-        <link rel="stylesheet" href="/css/style.css">
-        <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
-    </head>
-    <body>
-        <div class="header">
-            <div class="header-title">
-                Fight for artistic creativity / 自分を守る、みんなで守る。
-            </div>
-            <div class="header-subtitle">
-                不適切な内容を投稿しているユーザから身を守る方法を提供しています。
-            </div>
-        </div>
+<?php
+    include "inc/config.php";
+    $title = "Fight for artistic creativity";
+    include "inc/header.php";
+?>
         <div class="container">
             <div class="column">
                 <div class="card">
@@ -24,7 +11,7 @@
                     <div class="card-content">
                         簡単な操作でリストアップされているアカウントを<br />
                         スパム報告・ブロックすることができます。<br />
-                        <a class="btn" href="" target="blank">この方法で守る</a>
+                        <a class="btn" href="/protect-yourself" target="blank">この方法で守る</a>
                     </div>
                 </div>
             </div>
@@ -53,5 +40,4 @@
                 </div>
             </div>
         </div>
-    </body>
-</html>
+<?php include "inc/footer.php"; ?>
