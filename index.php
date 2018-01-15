@@ -1,5 +1,6 @@
 <?php
     include "inc/config.php";
+    $isHeaderLarge = true;
     $title = "Fight for artistic creativity";
     include "inc/header.php";
 ?>
@@ -11,7 +12,7 @@
                     <div class="card-content">
                         簡単な操作でリストアップされているアカウントを<br />
                         スパム報告・ブロックすることができます。<br />
-                        <a class="btn" href="/protect-yourself" target="blank">この方法で守る</a>
+                        <a class="btn" href="/protect-yourself">この方法で守る</a>
                     </div>
                 </div>
             </div>

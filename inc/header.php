@@ -8,11 +8,9 @@
         <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
     </head>
     <body>
-        <div class="header">
-            <div class="header-title">
-                Fight for artistic creativity / 自分を守る、みんなで守る。
-            </div>
-            <div class="header-subtitle">
-                不適切な内容を投稿しているユーザから身を守る方法を提供しています。
+        <div class="header<?= isset($isHeaderLarge) && $isHeaderLarge ? " header-centering" : ""; ?>">
+            <div>
+                <span class="header-title">Fight for artistic creativity / 自分を守る、みんなで守る。</span><br />
+                <span class="header-subtitle">不適切な内容を投稿しているユーザから身を守る方法を提供しています。</span>
             </div>
         </div>

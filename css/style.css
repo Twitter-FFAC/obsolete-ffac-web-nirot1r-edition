@@ -3,9 +3,13 @@
         Author : nirot1r(Tomotada Saigusa)
         Support : Twitter-FFAC Team
 */
+    /* Font Load */
+        @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
     /* Tag Fixes */
         * {
             box-sizing: border-box;
+            color: #fff;
+            font-family: 'Noto Sans Japanese', sans-serif;
         }
         html, body {
             margin: 0; padding: 0;
@@ -19,6 +23,15 @@
             background-color: #222;
                 color: #fff;
         }
+            .header-centering {
+                height: 100%;
+                display: flex;
+                    align-items: center;
+                    justify-content: center;
+                background: linear-gradient(#af2121, #333);
+                font-size: 1.5em;
+                    font-weight: bold;
+            }
             .header-title {
                 font-size: 1.5em;
             }
@@ -56,7 +69,7 @@
     /* Component */
         .btn {
             display: inline-block;
-            background-color: #333;
+            background-color: #af2121;
                 color: #fff;
                 text-decoration: none;
             border: 1px #fff solid;
@@ -64,10 +77,8 @@
             transition: all 300ms 0s ease;
         }
             .btn:hover {
-                background-color: #fff;
-                    color: #333;
+                background-color: #e83030;
             }
             .btn:active {
-                background-color: #aaa;
-                    color: #fff;
+                background-color: #7f1818;
             }
