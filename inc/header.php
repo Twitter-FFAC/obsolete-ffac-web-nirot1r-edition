@@ -13,7 +13,8 @@
         <meta name="twitter:title" content="Fight for artistic creativity / 自分を守る、みんなで守る。">
         <meta name="twitter:description" content="#このリプ欄にはグロ画像があります 不適切な内容を投稿しているユーザから身を守る方法を提供しています。">
         <meta name="twitter:image" content="https://ffac.g-second.net/images/card.jpg">
-
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  
     </head>
     <body>
         <div class="header<?= isset($isHeaderLarge) && $isHeaderLarge ? " header-centering" : ""; ?>">
