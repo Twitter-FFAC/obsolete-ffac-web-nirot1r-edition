@@ -12,4 +12,4 @@
     $_SESSION["twitter"]["secrettoken"] = $request_token["oauth_token_secret"];
 
     $url = $connection->url("oauth/authenticate", ["oauth_token" => $request_token["oauth_token"]]);
-    header("Location:".$url);
+    header("Location: ".$url);
