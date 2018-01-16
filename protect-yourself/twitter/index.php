@@ -8,10 +8,13 @@
             <div class="column">
                 <div class="card">
                     <div class="card-icon"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
-                    <div class="card-header">利用上の注意</div>
+                    <div class="card-header">認証を行う</div>
                     <div class="card-content">
+                        下のボタンをクリックし、ブロックリストを<br />
+                        インポートするアカウントでログインしてください。<br />
+                        その後、画面の指示に従って操作してください。
                         <br />
-                        <a class="btn" href="account-list" target="blank">アプリケーション認証画面を開く</a>
+                        <a class="btn" href="oauth.php" target="blank">アプリケーション認証画面を開く</a>
                     </div>
                 </div>
             </div>

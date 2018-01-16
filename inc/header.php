@@ -6,6 +6,14 @@
         <title><?= $title ?> / 自分を守る、みんなで守る。</title>
         <link rel="stylesheet" href="/css/style.css">
         <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@nirot1r">
+        <meta name="twitter:creator" content="@nirot1r">
+        <meta name="twitter:title" content="Fight for artistic creativity / 自分を守る、みんなで守る。">
+        <meta name="twitter:description" content="#このリプ欄にはグロ画像があります 不適切な内容を投稿しているユーザから身を守る方法を提供しています。">
+        <meta name="twitter:image" content="https://ffac.g-second.net/images/Twitter-Card.jpg">
+
     </head>
     <body>
         <div class="header<?= isset($isHeaderLarge) && $isHeaderLarge ? " header-centering" : ""; ?>">
