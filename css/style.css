@@ -16,6 +16,12 @@
             width: 100%; height: 100%;
             background-color: #333;
         }
+        select {
+            width: 100%;
+            height: 2em;
+            font-size: 1.25em;
+                color: #333;
+        }
     /* Classes */
         .header {
             padding: 10px;
