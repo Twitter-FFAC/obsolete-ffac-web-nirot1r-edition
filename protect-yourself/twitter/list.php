@@ -106,12 +106,13 @@
                     },
                     function(response) {
                         if(response === "success") {
-                            alert("処理が完了しました。");
+                            alert("正常に処理が完了しました。\nご協力ありがとうございました。");
                             window.location.href = "./";
                         }
+                    //block_btn.innerText = "ブロック処理を開始";
+                    //block_btn.removeAttribute("disabled");
                     }
                 )
-                block_btn.removeAttribute("disabled");
             }
         </script>
 <?php
