@@ -98,6 +98,9 @@
                 font-weight: bold;
                 color: #fff;
         }
+            .btn[disabled], .btn[disabled]:hover, .btn[disabled]:active {
+                background-color: #500;
+            }
             .btn:hover {
                 background-color: #e83030;
             }

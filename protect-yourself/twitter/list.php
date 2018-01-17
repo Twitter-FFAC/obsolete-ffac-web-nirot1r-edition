@@ -2,6 +2,10 @@
     include "../../inc/config.php";
     $title = "自分で守る";
     include "../../inc/header.php";
+    
+    if(!isset($_SESSION["access_token"])) {
+        header("Location: ./");
+    }
 ?>
         <div class="container">
             <h1>ブロックしたいアカウントを選択する</h1>
@@ -25,7 +29,7 @@
                     <div class="card-content">
                         ブロックを行います。<br />
                         下のボタンをクリックしてください。<br />
-                        <button class="btn">ブロック処理を開始</button>
+                        <button class="btn" id="block" onclick="s()">ブロック処理を開始</button>
                     </div>
                 </div>
             </div>
@@ -89,6 +93,14 @@
                     });
                 }
                 block_usercnt.innerText = user_list.length;
+            }
+
+            const s = function() {
+                const block_btn = document.getElementById("block");
+                block_btn.setAttribute("disabled", "");
+                block_btn.innerText = "処理中です…";
+                //alert("処理が完了しました");
+                //block_btn.removeAttribute("disabled");
             }
         </script>
 <?php
