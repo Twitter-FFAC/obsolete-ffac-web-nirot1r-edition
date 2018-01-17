@@ -111,8 +111,7 @@
                         }
                     }
                 )
-                //alert("処理が完了しました");
-                //block_btn.removeAttribute("disabled");
+                block_btn.removeAttribute("disabled");
             }
         </script>
 <?php
