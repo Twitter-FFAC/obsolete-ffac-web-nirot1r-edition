@@ -12,51 +12,83 @@
                         <form name="select_list">
                             <select name="list" onchange="c()">
                                 <option value="-">-</option>
-                                <option value="black">ブラックリストのみ</option>
-                                <option value="light">グレーリストも含む</option>
+                                <option value="blacklist">ブラックリスト</option>
+                                <option value="graylist">グレーリスト</option>
                             </select>
                         </form>
                     </div>
                 </div>
             </div>
-            <div id="data">
+            <div class="column no-display" id="block-btn">
+                <div class="card">
+                    <div class="card-header">ブロックを行う(<span id="block_usercnt"></span>件)</div>
+                    <div class="card-content">
+                        ブロックを行います。<br />
+                        下のボタンをクリックしてください。<br />
+                        <button class="btn">ブロック処理を開始</button>
+                    </div>
+                </div>
             </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ブロック？</th>
+                        <th>名前</th>
+                        <th>スクリーンネーム</th>
+                    </tr>
+                </thead>
+                <tbody id="data">
+                </tbody>
+            </table>
         </div>
 
         <script>
+            const block_usercnt = document.getElementById("block_usercnt");
+            let user_list = [];
             const c = function() {
                 const list_value = document.select_list.list.value;
+                const table_data = document.getElementById("data");
+                    table_data.textContent = null;
+                const block_btn = document.getElementById("block-btn");
+                    block_btn.classList.add("no-display");
+                block_usercnt.innerText = 0;
+                user_list = [];
                 if(list_value !== "-") {
                     $.get(
-                        "https://raw.githubusercontent.com/Twitter-FFAC/fight-for-artistic-creativity/master/lists/blacklist.json",
+                        "https://raw.githubusercontent.com/Twitter-FFAC/fight-for-artistic-creativity/master/lists/" + list_value + ".json",
                         {},
                         function(response_json) {
-                            const column_data = document.getElementById("data");
                             const list_data = JSON.parse(response_json);
-                            alert(list_data);
-                            list_data.foreach(function(value, index, list_data) {
-                                
-                                const column = document.createElement("div"); 
-                                const card = document.createElement("div");
-                                const card_header = document.createElement("div");
-                                const card_content = document.createElement("div");
 
-                                    card.classList.add("card");
-                                    column.classList.add("column");
-                                    card_header.classList.add("card-header");
-                                        card_header.innerText = "a";
-                                    card_content.classList.add("card-content");
-                                        card_content.innerText = "114514";
-
-                                    card.appendChild(card_header);
-                                    card.appendChild(card_content);
-                                    column.appendChild(card);
-                                    column_data.appendChild(column);
-                                
+                            list_data.forEach(function(value, index, list_data) {
+                                const list_tr = document.createElement("tr");
+                                    const checkbox = document.createElement("td");
+                                    const username = document.createElement("td");
+                                    const screenname = document.createElement("td");
+                                        checkbox.innerHTML = '<input type="checkbox" onclick="r(' + value.id + ', this.checked)" checked>';
+                                        username.innerText = value.name;
+                                        screenname.innerText = "@" + value.screen_name;
+                                    list_tr.appendChild(checkbox);
+                                    list_tr.appendChild(username);
+                                    list_tr.appendChild(screenname);
+                                table_data.appendChild(list_tr);
+                                user_list.push(value.id);
                             });
+                            block_usercnt.innerText = user_list.length;
+                            block_btn.classList.remove("no-display");
                         });
-                    alert(list_value);
                 }
+            }
+
+            const r = function(id, checked) {
+                if(checked) {
+                    user_list.push(id);
+                } else {
+                    user_list.some(function(v, i){
+                        if (v == id) user_list.splice(i, 1);
+                    });
+                }
+                block_usercnt.innerText = user_list.length;
             }
         </script>
 <?php
