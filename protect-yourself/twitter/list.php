@@ -1,6 +1,6 @@
 <?php
     include "../../inc/config.php";
-    $title = "自分で守る";
+    $title = "ブロックしたいアカウントを選択する";
     include "../../inc/header.php";
     
     if(!isset($_SESSION["access_token"])) {

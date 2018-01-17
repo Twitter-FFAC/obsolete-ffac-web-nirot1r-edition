@@ -1,6 +1,6 @@
 <?php
     include "../../inc/config.php";
-    $title = "自分で守る";
+    $title = "Twitter連携を利用する";
     include "../../inc/header.php";
 ?>
         <div class="container">
