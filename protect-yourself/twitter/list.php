@@ -99,6 +99,18 @@
                 const block_btn = document.getElementById("block");
                 block_btn.setAttribute("disabled", "");
                 block_btn.innerText = "処理中です…";
+                $.post(
+                    "https://ffac.g-second.net/protect-yourself/twitter/block.php",
+                    {
+                        "user[]": user_list
+                    },
+                    function(response) {
+                        if(response === "success") {
+                            alert("処理が完了しました。");
+                            window.location.href = "./";
+                        }
+                    }
+                )
                 //alert("処理が完了しました");
                 //block_btn.removeAttribute("disabled");
             }
